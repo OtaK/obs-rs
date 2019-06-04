@@ -2,7 +2,13 @@
 name = "libobs-sys"
 version = "0.1.0"
 authors = ["Mathieu Amiot <amiot.mathieu@gmail.com>"]
-edition = "2018"
+license = "MIT/Apache-2.0"
+description = "Raw FFI bindings to libOBS (Open Broadcasting Software)"
+keywords = ["ffi", "bindings", "obs"]
+categories = ["external-ffi-bindings"]
+repository = "https://github.com/OtaK/libobs-sys"
+build = "build.rs"
+links = "obs"
 
 [dependencies]
 

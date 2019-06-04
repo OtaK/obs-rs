@@ -1,5 +1,8 @@
+extern crate bindgen;
+extern crate pkg_config;
+
 fn main() {
-    let lib = pkg_config::probe_library("libobs").unwrap();
+    let _ = pkg_config::probe_library("libobs").unwrap();
 
     let bindings = bindgen::builder()
         .header("wrapper.h")
