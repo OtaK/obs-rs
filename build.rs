@@ -1,6 +1,5 @@
 fn main() {
     let lib = pkg_config::probe_library("libobs").unwrap();
-    println!("{:?}", lib);
 
     let bindings = bindgen::builder()
         .header("wrapper.h")
