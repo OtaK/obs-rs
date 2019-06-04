@@ -1,6 +1,7 @@
-#![allow(non_upper_case_globals)]
-#![allow(non_camel_case_types)]
-#![allow(non_snake_case)]
-#![allow(improper_ctypes)]
+pub mod types;
 
-include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
+pub const LIBOBS_API: (u32, u32, u32) = (
+    libobs_sys::LIBOBS_API_MAJOR_VER,
+    libobs_sys::LIBOBS_API_MINOR_VER,
+    libobs_sys::LIBOBS_API_PATCH_VER,
+);
