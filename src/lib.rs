@@ -1,4 +1,8 @@
+pub mod core;
+mod error;
 pub mod types;
+
+pub use self::error::*;
 
 pub const LIBOBS_API: (u32, u32, u32) = (
     libobs_sys::LIBOBS_API_MAJOR_VER,

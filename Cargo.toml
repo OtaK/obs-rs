@@ -10,6 +10,9 @@ repository = "https://github.com/OtaK/obs-rs"
 edition = "2018"
 
 [dependencies]
+failure = "0.1.5"
+failure_derive = "0.1.5"
+bitflags = "1.0.4"
 
 [dependencies.libobs-sys]
 path = "libobs-sys"
